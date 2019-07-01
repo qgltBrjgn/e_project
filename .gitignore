@@ -1,0 +1,25 @@
+# Created by .ignore support plugin (hsz.mobi)
+/.idea/
+/ego.iml
+
+/ego-rpc/ego-rpc.iml
+
+/ego-code-generate/target
+/ego-common/target
+/ego-manager-web/target
+
+/ego-code-generate/ego-code-generate.iml
+/ego-common/ego-common.iml
+/ego-manager-web/ego-manager-web.iml
+
+/ego-rpc/ego-rpc-mapper/target
+/ego-rpc/ego-rpc-service/target
+/ego-rpc/ego-rpc-pojo/target
+/ego-rpc/ego-rpc-service-impl/target
+
+/ego-rpc/ego-rpc-mapper/ego-rpc-mapper.iml
+/ego-rpc/ego-rpc-service/ego-rpc-service.iml
+/ego-rpc/ego-rpc-pojo/ego-rpc-pojo.iml
+/ego-rpc/ego-rpc-service-impl/ego-rpc-service-impl.iml
+
+
