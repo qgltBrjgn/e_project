@@ -46,6 +46,18 @@
                <!--enableCountByExample="false"-->
                <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
                <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="tb_item_desc" domainObjectName="TbItemDesc"-->
+               <!--enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <!--<table tableName="tb_item_param_item" domainObjectName="TbItemParamItem"-->
+               <!--enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false"></table>-->
+        <table tableName="tb_item_cat" domainObjectName="TbItemCat"
+               enableCountByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
 
     </context>
 

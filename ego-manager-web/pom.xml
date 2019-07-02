@@ -93,7 +93,12 @@
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
         </dependency>
-
+        <!--七牛 静态资源问价上传用-->
+        <dependency>
+            <groupId>com.qiniu</groupId>
+            <artifactId>qiniu-java-sdk</artifactId>
+            <version>7.2.22</version>
+        </dependency>
 
     </dependencies>
 

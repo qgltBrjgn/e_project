@@ -21,4 +21,8 @@
                      id="userServiceProxy"></dubbo:reference>
     <dubbo:reference interface="com.qglt.ego.rpc.service.IItemService"
                      id="iItemServiceProxy"></dubbo:reference>
+    <dubbo:reference interface="com.qglt.ego.rpc.service.IItemCatService"
+                     id="iItemCatServiceProxy"></dubbo:reference>
+    <dubbo:reference interface="com.qglt.ego.rpc.service.IItemDescService"
+                     id="iItemDescServiceProxy"></dubbo:reference>
 </beans>

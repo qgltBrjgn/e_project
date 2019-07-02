@@ -4,6 +4,7 @@ import com.qglt.ego.rpc.pojo.TbItem;
 import com.qglt.ego.rpc.query.ItemQuery;
 
 import java.util.List;
+import java.util.Map;
 
 public interface TbItemMapper {
     int deleteByPrimaryKey(Long id);
@@ -19,4 +20,8 @@ public interface TbItemMapper {
     int updateByPrimaryKey(TbItem record);
 
     public List<TbItem> queryItemsByParams(ItemQuery itemQuery);
+
+    int updateItemStatusBatch(Map<String, Object> params);
+
+    int deleteItemBatch(Map<String, Object> param);
 }
