@@ -17,10 +17,10 @@ import org.springframework.web.multipart.MultipartFile;
  */
 @Service
 public class ManagerFileServiceImpl implements IManagerFileService {
-    private String ak = "3K77OJ214syThkwIbX8skAMHcEYmZJuqGcTSEEW1";
-    private String sk = "DpQoXLAfJWJJblp-kdBm4t573Tzf_cEmq6xLoFW3";
-    private String bucket = "20190701";
-    private String basePath="http://pty9die0h.bkt.clouddn.com/";
+    private String ak = "yByVgMxD4LyQ-lMt7YuoUbZ4VJlUiwkExkqKwqJu";
+    private String sk = "bTteR-1uVF5ERik9SKCpczD_m0DKMAHzVuZh5o09";
+    private String bucket = "ego-static-resources";
+    private String basePath="http://pu67wqmp1.bkt.clouddn.com/";
     @Override
     public PictureResult uploadFile(MultipartFile mf) {
         PictureResult result = new PictureResult();

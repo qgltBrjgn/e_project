@@ -57,7 +57,9 @@ public class ManagerItemController {
      */
     @RequestMapping("item/save")
     @ResponseBody
-    public EgoResult saveItem(TbItem tbItem,String desc){
-        return managerItemService.saveItem(tbItem,desc);
+    public EgoResult saveItem(TbItem tbItem,String desc,String itemParams){
+        return managerItemService.saveItem(tbItem,desc,itemParams);
     }
+
+
 }

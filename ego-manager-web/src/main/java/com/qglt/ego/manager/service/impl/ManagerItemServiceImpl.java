@@ -6,6 +6,7 @@ import com.qglt.ego.common.utils.IDUtils;
 import com.qglt.ego.manager.service.IManagerItemService;
 import com.qglt.ego.rpc.pojo.TbItem;
 import com.qglt.ego.rpc.pojo.TbItemDesc;
+import com.qglt.ego.rpc.pojo.TbItemParamItem;
 import com.qglt.ego.rpc.query.ItemQuery;
 import com.qglt.ego.rpc.service.IItemService;
 import org.springframework.stereotype.Service;
@@ -43,7 +44,7 @@ public class ManagerItemServiceImpl implements IManagerItemService{
     }
 
     @Override
-    public EgoResult saveItem(TbItem tbItem, String desc) {
+    public EgoResult saveItem(TbItem tbItem, String desc,String itemParams) {
         //设置商品id uuid
         Long itemId = IDUtils.genItemId();
         Date date = new Date();
@@ -58,6 +59,14 @@ public class ManagerItemServiceImpl implements IManagerItemService{
         itemDesc.setItemDesc(desc);
         itemDesc.setCreated(date);
         itemDesc.setUpdated(date);
-        return iItemServiceProxy.saveItem(tbItem,itemDesc);
+
+        //商品规格记录设置
+        TbItemParamItem itemParamItem = new TbItemParamItem();
+        itemParamItem.setItemId(itemId);
+        itemParamItem.setParamData(itemParams);
+        itemParamItem.setCreated(date);
+        itemParamItem.setUpdated(date);
+
+        return iItemServiceProxy.saveItem(tbItem,itemDesc,itemParamItem);
     }
 }

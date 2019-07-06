@@ -4,6 +4,7 @@ import com.qglt.ego.common.model.EgoResult;
 import com.qglt.ego.common.model.PageResult;
 import com.qglt.ego.rpc.pojo.TbItem;
 import com.qglt.ego.rpc.pojo.TbItemDesc;
+import com.qglt.ego.rpc.pojo.TbItemParamItem;
 import com.qglt.ego.rpc.query.ItemQuery;
 
 /**
@@ -19,5 +20,5 @@ public interface IItemService {
     public EgoResult deleteItemBatch(Long[] ids);
 
 
-    public EgoResult saveItem(TbItem tbItem, TbItemDesc itemDesc);
+    public EgoResult saveItem(TbItem tbItem, TbItemDesc itemDesc, TbItemParamItem itemParamItem);
 }

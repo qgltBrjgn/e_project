@@ -19,4 +19,6 @@ public interface TbItemCatMapper {
     int updateByPrimaryKey(TbItemCat record);
 
     List<TreeDto> queryItemCatsByParentId(Long id);
+
+    List<TbItemCat> queryAllItemCats();
 }

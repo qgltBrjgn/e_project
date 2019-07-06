@@ -20,9 +20,16 @@
   	<dubbo:reference interface="com.qglt.ego.rpc.service.IUserService"
                      id="userServiceProxy"></dubbo:reference>
     <dubbo:reference interface="com.qglt.ego.rpc.service.IItemService"
-                     id="iItemServiceProxy"></dubbo:reference>
+                    id="itemServiceProxy"></dubbo:reference>
     <dubbo:reference interface="com.qglt.ego.rpc.service.IItemCatService"
-                     id="iItemCatServiceProxy"></dubbo:reference>
+                     id="itemCatServiceProxy"></dubbo:reference>
     <dubbo:reference interface="com.qglt.ego.rpc.service.IItemDescService"
-                     id="iItemDescServiceProxy"></dubbo:reference>
+                     id="itemDescServiceProxy"></dubbo:reference>
+    <dubbo:reference interface="com.qglt.ego.rpc.service.IItemParamService"
+                     id="itemParamServiceProxy"></dubbo:reference>
+    <dubbo:reference interface="com.qglt.ego.rpc.service.IContentCategoryService"
+                     id="contentCategoryServiceProxy"></dubbo:reference>
+    <dubbo:reference interface="com.qglt.ego.rpc.service.IContentService"
+                     id="contentServiceProxy"></dubbo:reference>
+
 </beans>

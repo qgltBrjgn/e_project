@@ -134,4 +134,10 @@
     WHERE parent_id = #{id}
   </select>
 
+  <select id="queryAllItemCats" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    FROM tb_item_cat
+    WHERE status=1
+  </select>
 </mapper>

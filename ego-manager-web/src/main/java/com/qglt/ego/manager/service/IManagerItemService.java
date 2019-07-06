@@ -19,5 +19,5 @@ public interface IManagerItemService {
 
     public EgoResult deleteItemBatch(Long[] ids);
 
-    EgoResult saveItem(TbItem tbItem, String desc);
+    EgoResult saveItem(TbItem tbItem, String desc,String itemParams);
 }

@@ -1,6 +1,7 @@
 package com.qglt.ego.rpc.service;
 
 import com.qglt.ego.rpc.dto.TreeDto;
+import com.qglt.ego.rpc.pojo.TbItemCat;
 
 import java.util.List;
 
@@ -9,4 +10,6 @@ import java.util.List;
  */
 public interface IItemCatService {
     public List<TreeDto> queryItemCatsByParentId(Long id);
+
+    public List<TbItemCat> queryAllItemCats();
 }
