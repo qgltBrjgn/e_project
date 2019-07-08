@@ -30,5 +30,6 @@
 	<dubbo:service interface="com.qglt.ego.rpc.service.IItemParamService" ref="itemParamServiceImpl"></dubbo:service>
 	<dubbo:service interface="com.qglt.ego.rpc.service.IContentCategoryService" ref="contentCategoryServiceImpl"></dubbo:service>
 	<dubbo:service interface="com.qglt.ego.rpc.service.IContentService" ref="contentServiceImpl"></dubbo:service>
+	<dubbo:service interface="com.qglt.ego.rpc.service.IUserService" ref="userServiceImpl"></dubbo:service>
 
 </beans>

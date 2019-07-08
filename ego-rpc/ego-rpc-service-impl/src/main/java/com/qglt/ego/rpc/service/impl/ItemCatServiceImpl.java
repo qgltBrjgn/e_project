@@ -5,6 +5,7 @@ import com.qglt.ego.rpc.mapper.db.dao.TbItemCatMapper;
 import com.qglt.ego.rpc.pojo.TbItemCat;
 import com.qglt.ego.rpc.service.IItemCatService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
@@ -28,6 +29,7 @@ public class ItemCatServiceImpl implements IItemCatService{
     private ValueOperations<String,Object> valueOperations;
 
     @Override
+    //@Cacheable(value = "redis",key = "#id")
     public List<TreeDto> queryItemCatsByParentId(Long id) {
         return itemCatMapper.queryItemCatsByParentId(id);
     }

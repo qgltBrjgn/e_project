@@ -1,6 +1,7 @@
 package com.qglt.ego.rpc.mapper.db.dao;
 
 import com.qglt.ego.rpc.pojo.TbUser;
+import org.apache.ibatis.annotations.Param;
 
 public interface TbUserMapper {
     int deleteByPrimaryKey(Long id);
@@ -14,4 +15,6 @@ public interface TbUserMapper {
     int updateByPrimaryKeySelective(TbUser record);
 
     int updateByPrimaryKey(TbUser record);
+
+    TbUser userCheck(@Param("param") String param,@Param("type") Integer type);
 }

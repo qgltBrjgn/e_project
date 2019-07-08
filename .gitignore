@@ -22,4 +22,8 @@
 /ego-rpc/ego-rpc-pojo/ego-rpc-pojo.iml
 /ego-rpc/ego-rpc-service-impl/ego-rpc-service-impl.iml
 
+/ego-portal-web/target
+/ego-portal-web/ego-portal-web.iml
 
+/ego-sso-web/target
+/ego-sso-web/ego-sso-web.iml
